@@ -20,5 +20,6 @@ class TestController extends Controller
             $post->topic = $faker->word();
             $post->external_link = $faker->url();
             var_dump($post);
+            var_dump($faker->imageUrl($width = 640, $height = 480));
     }
 }

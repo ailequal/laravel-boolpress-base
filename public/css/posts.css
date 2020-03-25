@@ -1,0 +1,91 @@
+.posts {
+  margin: 20px auto;
+}
+
+.posts h2 {
+  margin: 0 auto 20px auto;
+  font-size: 40px;
+  color: #e26d5a;
+}
+
+.posts .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.posts .wrapper .post {
+  width: calc((100% / 2) - 10px);
+  margin: 0 0 10px 0;
+  border: 2px solid #dfbbb1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.posts .wrapper .post h2 {
+  color: #e26d5a;
+}
+
+.posts .wrapper .post h3 {
+  color: #e26d5a;
+}
+
+.posts .wrapper .post p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #23395b;
+}
+
+.posts .wrapper .post .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.posts .wrapper .post .box div {
+  width: calc(100% / 2);
+}
+
+.posts .wrapper .post .box div:nth-child(even) {
+  text-align: end;
+}
+
+.posts .wrapper .post .box .authors .author {
+  color: #bc75ef;
+}
+
+.posts .wrapper .post .box .authors .collaborator {
+  color: #bc75ef;
+}
+
+.posts .wrapper .post .box .info .language {
+  color: #68b0ab;
+}
+
+.posts .wrapper .post .box .info .topic {
+  color: #68b0ab;
+}
+
+.posts .wrapper .post .box .link .external_link {
+  text-decoration: none;
+  color: #bc75ef;
+}
+
+.posts .wrapper .post .box .date .created_at {
+  color: #68b0ab;
+}
+
+.posts .wrapper .post .box .date .updated_at {
+  color: #68b0ab;
+}
+
+@media screen and (max-width: 768px) {
+  .posts .wrapper .post {
+    width: 100%;
+  }
+}
+
