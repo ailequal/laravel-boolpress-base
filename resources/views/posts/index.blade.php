@@ -28,6 +28,7 @@
 					<span class="updated_at">{{$post->updated_at}}</span>
 				</div>
 			</div>
+			<a href="{{route('posts.edit', $post->id)}}">EDIT</a>
 		</div>
 		@endforeach
 	</div>

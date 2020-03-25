@@ -6,6 +6,7 @@
 	<div class="wrapper">
 		<form action="{{route('posts.store')}}" method="POST">
 			@csrf
+			@method('POST')
 			<label for="title">Title</label>
 			<input type="text" name="title" placeholder="Title">
 
