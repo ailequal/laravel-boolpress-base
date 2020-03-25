@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: $body;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.container-fluid {
+    width: 100%;
+}
