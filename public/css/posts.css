@@ -17,6 +17,7 @@
 }
 
 .posts .wrapper .post {
+  align-self: stretch;
   width: calc((100% / 2) - 10px);
   margin: 0 0 10px 0;
   border: 2px solid #dfbbb1;
