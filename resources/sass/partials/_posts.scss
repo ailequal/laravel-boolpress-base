@@ -1,0 +1,69 @@
+.posts {
+    margin: 20px auto;
+    h2 {
+        margin: 0 0 20px 0;
+        font-size: 40px;
+        color: $h2;
+    }
+    .wrapper {
+        .post {
+            border: 2px solid $border;
+            border-radius: 10px;
+            padding: 10px;
+            h2 {
+                color: $title;
+            }
+            h3 {
+                color: $subtitle;
+            }
+            p {
+                margin: 10px 0;
+                font-size: 18px;
+                line-height: 1.4;
+                color: $text;
+            }
+            .box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                div {
+                    width: calc(100% / 2);
+                    &:nth-child(even) {
+                        text-align: end;
+                    }
+                }
+                .authors {
+                    .author {
+                        color: $author;
+                    }
+                    .collaborator {
+                        color: $collaborator;
+                    }
+                }
+                .info {
+                    .language {
+                        color: $language;
+                    }
+                    .topic {
+                        color: $topic;
+                    }
+                }
+                .link {
+                    .external_link {
+                        text-decoration: none;
+                        color: $external_link;
+                    }
+                }
+                .date {
+                    .created_at {
+                        color: $created_at;
+                    }
+                    .updated_at {
+                        color: $updated_at;
+                    }
+                }
+            }
+        }
+    }
+}
