@@ -26,7 +26,8 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        // form for creating a new entry inside the db
+        return view('posts.create');
     }
 
     /**
