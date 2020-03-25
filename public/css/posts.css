@@ -25,7 +25,11 @@
   padding: 10px;
 }
 
-.posts .wrapper .post h2 {
+.posts .wrapper .post a {
+  text-decoration: none;
+}
+
+.posts .wrapper .post a h2 {
   color: #e26d5a;
 }
 

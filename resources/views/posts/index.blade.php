@@ -6,7 +6,9 @@
 	<div class="wrapper">
 		@foreach ($posts as $post)
 		<div class="post">
-			<h2>{{$post->title}}</h2>
+			<a href="{{route('posts.show', $post->id)}}">
+				<h2>{{$post->title}}</h2>
+			</a>
 			<h3>{{$post->subtitle}}</h3>
 			<p>{{$post->text}}</p>
 			<div class="box">

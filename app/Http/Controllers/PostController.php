@@ -7,6 +7,17 @@ use App\Post;
 
 class PostController extends Controller
 {
+    private $postValidation = [
+        'title' => 'required|string|max:100',
+        'subtitle' => 'required|string|max:100',
+        'text' => 'required|string',
+        'author' => 'required|string|max:100',
+        'collaborator' => 'required|string|max:100',
+        'language' => 'required|string|max:100',
+        'topic' => 'required|string|max:100',
+        'external_link' => 'required|string|max:100'
+      ];
+
     /**
      * Display a listing of the resource.
      *
@@ -38,7 +49,23 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       // store all the data passed with post method
+       $data = $request->all();
+ 
+       // form validation with laravel for the post data
+       $request->validate($this->postValidation);
+ 
+       // creating a new object to store inside the db
+       $post = new Post();
+       $post->fill($data);
+ 
+       // if the save process was successful show the new post
+       $save = $post->save();
+       if ($save) {
+         return redirect()->route('posts.show', $post->id);
+       } else {
+         abort('500');
+       }
     }
 
     /**
@@ -49,7 +76,15 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+       // call from the db the record matching the given id
+       $post = Post::where('id', $id)->first();
+
+       // if the selection process was successful show the selected post
+       if (!empty($post)) {
+         return view('posts.show', ["post"=>$post]);
+       } else {
+         abort('404');
+       }
     }
 
     /**

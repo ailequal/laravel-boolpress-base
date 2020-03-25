@@ -18,8 +18,11 @@
             border: 2px solid $border;
             border-radius: 10px;
             padding: 10px;
-            h2 {
-                color: $title;
+            a {
+                text-decoration: none;
+                h2 {
+                    color: $title;
+                }
             }
             h3 {
                 color: $subtitle;
