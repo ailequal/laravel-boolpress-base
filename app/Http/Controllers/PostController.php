@@ -143,6 +143,10 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        // select post matching id from db and delete it
+        Post::find($id)->delete();
+        // requesting all the posts from the db
+        $posts = Post::all();
+        return view('posts.index', ["posts"=>$posts]);
     }
 }

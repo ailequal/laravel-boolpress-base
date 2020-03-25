@@ -27,6 +27,14 @@
 					<span class="updated_at">{{$post->updated_at}}</span>
 				</div>
 			</div>
+			<div>
+				<a href="{{route('posts.edit', $post->id)}}">EDIT</a>
+				<form action="{{route('posts.destroy', $post->id)}}" method="POST">
+					@csrf
+					@method('DELETE')
+					<button type="submit">DELETE</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
