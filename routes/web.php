@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::resource('posts', 'PostController');
+Route::get('/test', 'TestController@index')->name('test.index');
