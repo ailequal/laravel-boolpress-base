@@ -10,7 +10,14 @@
 
 <body>
 	<header>
-		@include('partials._header')
+		<div class="container">
+			<nav class="nav-bar">
+				<ul>
+					<li><a href="{{route('posts.index')}}">HOME</a></li>
+					<li><a href="#">NEW</a></li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
 		@yield('main')
