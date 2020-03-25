@@ -11,10 +11,14 @@ class TestController extends Controller
     public function index(Faker $faker)
     {
             $post = new Post;
-            $post->title = $faker->text;
-            $post->subtitle = $faker->text;
+            $post->title = $faker->catchPhrase();
+            $post->subtitle = $faker->bs();
+            $post->text = $faker->realText($maxNbChars = 500, $indexSize = 2);
             $post->author = $faker->firstName() . ' ' . $faker->lastName();
-            $post->subtitle = $faker->firstName();
+            $post->collaborator = $faker->firstName() . ' ' . $faker->lastName();
+            $post->language = $faker->locale();
+            $post->topic = $faker->word();
+            $post->external_link = $faker->url();
             var_dump($post);
     }
 }
