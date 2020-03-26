@@ -48,7 +48,15 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        // call from the db the record matching the given id
+        $user = User::where('id', $id)->first();
+
+        // if the selection process was successful show the selected user
+        if (!empty($user)) {
+            return view('users.show', ["user"=>$user]);
+        } else {
+            abort('404');
+        }
     }
 
     /**
