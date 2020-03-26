@@ -14,14 +14,14 @@
 				<span class="created_at">{{$user->created_at}}</span>
 				<span class="updated_at">{{$user->updated_at}}</span>
 			</div>
-		</div>
-		<div>
-			<a href="{{route('users.edit', $user->id)}}">EDIT</a>
-			<form action="{{route('users.destroy', $user->id)}}" method="POST">
-				@csrf
-				@method('DELETE')
-				<button type="submit">DELETE</button>
-			</form>
+			<div>
+				<a href="{{route('users.edit', $user->id)}}">EDIT</a>
+				<form action="{{route('users.destroy', $user->id)}}" method="POST">
+					@csrf
+					@method('DELETE')
+					<button type="submit">DELETE</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
