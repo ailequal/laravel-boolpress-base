@@ -17,5 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('users', 'UserController');
+
+Route::resource('photos', 'PhotoController');
+
 Route::resource('posts', 'PostController');
+
 Route::get('/test', 'TestController@index')->name('test.index');

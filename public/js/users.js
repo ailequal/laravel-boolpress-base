@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -10696,9 +10696,9 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./resources/js/posts.js":
+/***/ "./resources/js/users.js":
 /*!*******************************!*\
-  !*** ./resources/js/posts.js ***!
+  !*** ./resources/js/users.js ***!
   \*******************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -10706,19 +10706,19 @@ return jQuery;
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 $(document).ready(function () {
-  console.log('hello world from posts.js');
+  console.log('hello world from users.js');
 });
 
 /***/ }),
 
-/***/ 3:
+/***/ 1:
 /*!*************************************!*\
-  !*** multi ./resources/js/posts.js ***!
+  !*** multi ./resources/js/users.js ***!
   \*************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/js/posts.js */"./resources/js/posts.js");
+module.exports = __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/js/users.js */"./resources/js/users.js");
 
 
 /***/ })
