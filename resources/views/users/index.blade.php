@@ -10,7 +10,14 @@
 				<h2>{{$user->name}}</h2>
 			</a>
 			<h3>{{$user->email}}</h3>
-			<h3>{{$user->password}}</h3>
+			<div>
+				@foreach ($user->photos as $photo)
+				<h4>{{$photo->user_id}}</h4>
+				<h4>{{$photo->file_name}}</h4>
+				<h4>{{$photo->url}}</h4>
+				@endforeach
+				<h4></h4>
+			</div>
 			<div class="date">
 				<span class="created_at">{{$user->created_at}}</span>
 				<span class="updated_at">{{$user->updated_at}}</span>
