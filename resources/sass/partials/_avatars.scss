@@ -1,0 +1,50 @@
+.avatars {
+    margin: 20px auto;
+    h2 {
+        margin: 0 auto 20px auto;
+        font-size: 40px;
+        color: $h2;
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        .avatar {
+            align-self: stretch;
+            width: calc((100% / 2) - 10px);
+            margin: 0 0 10px 0;
+            border: 2px solid $border;
+            border-radius: 10px;
+            padding: 10px;
+            a {
+                text-decoration: none;
+                h2 {
+                    color: $title;
+                }
+            }
+            h3 {
+                color: $subtitle;
+            }
+            .date {
+                .created_at {
+                    color: $created_at;
+                }
+                .updated_at {
+                    color: $updated_at;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .avatars {
+        .wrapper {
+            .avatar {
+                width: 100%;
+            }
+        }
+    }
+}
