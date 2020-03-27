@@ -1,0 +1,53 @@
+.photos {
+  margin: 20px auto;
+}
+
+.photos h2 {
+  margin: 0 auto 20px auto;
+  font-size: 40px;
+  color: #e26d5a;
+}
+
+.photos .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photos .wrapper .photo {
+  align-self: stretch;
+  width: calc((100% / 2) - 10px);
+  margin: 0 0 10px 0;
+  border: 2px solid #dfbbb1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.photos .wrapper .photo a {
+  text-decoration: none;
+}
+
+.photos .wrapper .photo a h2 {
+  color: #e26d5a;
+}
+
+.photos .wrapper .photo h3 {
+  color: #e26d5a;
+}
+
+.photos .wrapper .photo .date .created_at {
+  color: #68b0ab;
+}
+
+.photos .wrapper .photo .date .updated_at {
+  color: #68b0ab;
+}
+
+@media screen and (max-width: 768px) {
+  .photos .wrapper .photo {
+    width: 100%;
+  }
+}
+
