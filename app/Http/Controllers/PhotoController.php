@@ -48,7 +48,15 @@ class PhotoController extends Controller
      */
     public function show($id)
     {
-        //
+        // call from the db the record matching the given id
+        $photo = Photo::where('id', $id)->first();
+
+        // if the selection process was successful show the selected photo
+        if (!empty($photo)) {
+            return view('photos.show', ["photo"=>$photo]);
+        } else {
+            abort('404');
+        }
     }
 
     /**
