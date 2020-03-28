@@ -8,6 +8,7 @@
 		<div class="user">
 			<a href="{{route('users.show', $user->id)}}">
 				<h2>{{$user->name}}</h2>
+				<img src="{{$user->avatar->url}}" alt="avatar">
 			</a>
 			<h3>{{$user->email}}</h3>
 			<div>

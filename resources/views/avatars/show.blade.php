@@ -1,29 +1,25 @@
-@extends('layouts.users')
+@extends('layouts.avatars')
 
 @section('main')
-<div class="users container">
-	<h2>User --> Photos: {{$user->id}}</h2>
+<div class="avatars container">
+	<h2>Avatar --> User: {{$avatar->id}}</h2>
 	<div class="wrapper">
-		<div class="user">
-			<a href="{{route('users.show', $user->id)}}">
-				<h2>{{$user->name}}</h2>
+		<div class="avatar">
+			<a href="{{route('avatars.show', $avatar->id)}}">
+				<img src="{{$avatar->url}}" alt="avatar">
 			</a>
-			<h3>{{$user->email}}</h3>
+			<h3>{{$avatar->email}}</h3>
 			<div>
-				@foreach ($user->photos as $photo)
-				<h4>{{$photo->user_id}}</h4>
-				<h4>{{$photo->file_name}}</h4>
-				<h4>{{$photo->url}}</h4>
-				@endforeach
-				<h4></h4>
+				<h4>{{$avatar->user->name}}</h4>
+				<h4>{{$avatar->user->email}}</h4>
 			</div>
 			<div class="date">
-				<span class="created_at">{{$user->created_at}}</span>
-				<span class="updated_at">{{$user->updated_at}}</span>
+				<span class="created_at">{{$avatar->created_at}}</span>
+				<span class="updated_at">{{$avatar->updated_at}}</span>
 			</div>
 			<div>
-				<a href="{{route('users.edit', $user->id)}}">EDIT</a>
-				<form action="{{route('users.destroy', $user->id)}}" method="POST">
+				<a href="{{route('avatars.edit', $avatar->id)}}">EDIT</a>
+				<form action="{{route('avatars.destroy', $avatar->id)}}" method="POST">
 					@csrf
 					@method('DELETE')
 					<button type="submit">DELETE</button>

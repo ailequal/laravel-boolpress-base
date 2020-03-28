@@ -26,3 +26,7 @@ mix.js('resources/js/photos.js', 'public/js')
 // posts
 mix.js('resources/js/posts.js', 'public/js')
 	.sass('resources/sass/posts.scss', 'public/css');
+
+// avatars
+mix.js('resources/js/avatars.js', 'public/js')
+	.sass('resources/sass/avatars.scss', 'public/css');

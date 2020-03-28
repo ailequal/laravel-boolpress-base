@@ -8,6 +8,7 @@
 		<div class="photo">
 			<a href="{{route('photos.show', $photo->id)}}">
 				<h2>{{$photo->file_name}}</h2>
+				<img src="{{$photo->url}}" alt="url">
 			</a>
 			<h3>{{$photo->url}}</h3>
 			<div>

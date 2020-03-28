@@ -1,0 +1,53 @@
+.avatars {
+  margin: 20px auto;
+}
+
+.avatars h2 {
+  margin: 0 auto 20px auto;
+  font-size: 40px;
+  color: #e26d5a;
+}
+
+.avatars .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.avatars .wrapper .avatar {
+  align-self: stretch;
+  width: calc((100% / 2) - 10px);
+  margin: 0 0 10px 0;
+  border: 2px solid #dfbbb1;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.avatars .wrapper .avatar a {
+  text-decoration: none;
+}
+
+.avatars .wrapper .avatar a h2 {
+  color: #e26d5a;
+}
+
+.avatars .wrapper .avatar h3 {
+  color: #e26d5a;
+}
+
+.avatars .wrapper .avatar .date .created_at {
+  color: #68b0ab;
+}
+
+.avatars .wrapper .avatar .date .updated_at {
+  color: #68b0ab;
+}
+
+@media screen and (max-width: 768px) {
+  .avatars .wrapper .avatar {
+    width: 100%;
+  }
+}
+

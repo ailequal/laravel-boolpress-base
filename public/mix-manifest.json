@@ -4,6 +4,8 @@
     "/css/users.css": "/css/users.css",
     "/css/photos.css": "/css/photos.css",
     "/css/posts.css": "/css/posts.css",
+    "/css/avatars.css": "/css/avatars.css",
+    "/js/avatars.js": "/js/avatars.js",
     "/js/photos.js": "/js/photos.js",
     "/js/posts.js": "/js/posts.js",
     "/js/users.js": "/js/users.js"

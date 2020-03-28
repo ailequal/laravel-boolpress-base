@@ -29944,6 +29944,17 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/avatars.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/avatars.scss ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/photos.scss":
 /*!************************************!*\
   !*** ./resources/sass/photos.scss ***!
@@ -29978,9 +29989,9 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 /***/ }),
 
 /***/ 0:
-/*!**************************************************************************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/users.scss ./resources/sass/photos.scss ./resources/sass/posts.scss ***!
-  \**************************************************************************************************************************************************/
+/*!********************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/users.scss ./resources/sass/photos.scss ./resources/sass/posts.scss ./resources/sass/avatars.scss ***!
+  \********************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29988,7 +29999,8 @@ __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/js
 __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/sass/app.scss */"./resources/sass/app.scss");
 __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/sass/users.scss */"./resources/sass/users.scss");
 __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/sass/photos.scss */"./resources/sass/photos.scss");
-module.exports = __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/sass/posts.scss */"./resources/sass/posts.scss");
+__webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/sass/posts.scss */"./resources/sass/posts.scss");
+module.exports = __webpack_require__(/*! /Users/pacpera/repos/laravel-boolpress-base/resources/sass/avatars.scss */"./resources/sass/avatars.scss");
 
 
 /***/ })
